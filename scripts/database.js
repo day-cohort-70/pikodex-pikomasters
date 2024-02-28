@@ -1,4 +1,5 @@
-const database = [
+const database = {
+    pikomon: [
             {
                 id: 1,
                 name: 'Crouchy',
@@ -73,8 +74,13 @@ const database = [
             }
         ]
     
+    }
+
+// THIS IS THE MESSED UP FUNCTION I WASN'T WRONG BUT NOT RIGHT ON.................
+//export const getPikomon = () => {
+//     return database.map(pikomonItem => ({...pikomonItem}))
+// }
 
 export const getPikomon = () => {
-    return database.map(pikomonItem => ({...pikomonItem}))
+    return database.pikomon.map(pikomonItem => ({...pikomonItem}))
 }
-
